@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>testtttttttccchjsfv</title>
+    <style>
+        body {
+            background: white;
+            color: red;
+            font-family: Arial, sans-serif;
+        }
+        .premium-badge {
+            background: gold;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>testtttttttccchjsfv</h1>
+    <p class="description">
+        dhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+        
+    <style>
+        :root {
+            --bg-color: white;
+            --text-color: red;
+            --accent: #6d28d9;
+        }
+        
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 1rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            padding: 2rem;
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            margin: 0 auto 1.5rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin: 0 0 1rem;
+            background: linear-gradient(90deg, var(--accent), #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.2;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin: 0 auto 2rem;
+            max-width: 600px;
+        }
+
+        .contract-wrapper {
+            position: relative;
+            margin: 2rem auto;
+            max-width: 100%;
+        }
+
+        .contract {
+            background: rgba(0,0,0,0.1);
+            padding: 1.2rem;
+            border-radius: 16px;
+            font-family: 'Roboto Mono', monospace;
+            word-break: break-all;
+            font-size: 0.9rem;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .copy-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 0.3rem 0.6rem;
+            font-size: 0.7rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .contract-wrapper:hover .copy-btn {
+            opacity: 1;
+        }
+
+        .socials {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            transition: all 0.2s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(109, 40, 217, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .social-link {
+                padding: 0.7rem 1.5rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <h1>testtttttttccchjsfv</h1>
+        
+        <p class="description">dhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+        
+        <div class="contract-wrapper">
+            <div class="contract" id="contractAddress">kadfvhufqsbjuwgrjfbnwurtjkvncuirjmkfvnr4ejwqfj3igi54vs</div>
+            <button class="copy-btn" onclick="copyContract()">Copy</button>
+        </div>
+        
+        <div class="socials">
+            
+            
+            
+        </div>
+    </div>
+
+    <script>
+        function copyContract() {
+            const contract = document.getElementById('contractAddress');
+            navigator.clipboard.writeText(contract.innerText);
+            
+            const btn = document.querySelector('.copy-btn');
+            btn.innerText = 'Copied!';
+            setTimeout(() => btn.innerText = 'Copy', 2000);
+        }
+    </script>
+</body>
+</html>
